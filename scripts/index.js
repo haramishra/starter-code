@@ -1,6 +1,8 @@
 const hamburgerButton = document.querySelector(".hamburger");
 const sideMenu = document.querySelector(".side-nav");
 const closeButton = document.querySelector(".close-btn");
+const url = window.location.pathname;
+const navItems = document.querySelectorAll("li");
 
 hamburgerButton.addEventListener("click", (event) => {
   console.log("running");
@@ -12,4 +14,3 @@ closeButton.addEventListener("click", (event) => {
   sideMenu.classList.remove("scale-x-100");
   hamburgerButton.classList.remove("hidden");
 });
-

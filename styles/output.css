@@ -651,6 +651,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-right-width: 4px;
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .border-transparent {
   border-color: transparent;
 }

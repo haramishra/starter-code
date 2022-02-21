@@ -1,37 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="bg-destination-mobile md:bg-destination-desktop font-space h-screen w-full bg-black bg-cover text-white"
+  >
+    <nav class="relative flex flex-row items-center justify-between p-8">
+      <div class="logo h-[40px] w-[40px] lg:h-[48px] lg:w-[48px]">
+        <img src="./assets//shared/logo.svg" alt="logo" srcset="" />
+      </div>
+      <div class="` relative hidden backdrop-blur-xl backdrop-filter md:block">
+        <div
+          class="line absolute top-[50%] right-[50rem] z-50 hidden h-[0.5px] bg-[#979797] opacity-50 backdrop-blur-xl backdrop-filter lg:block lg:w-[18vw] xl:w-[26vw]"
+        ></div>
+        <ul
+          class="flex cursor-pointer flex-row space-x-10 uppercase tracking-[2.7px] lg:w-full lg:pr-44 lg:pl-20"
+        >
+          <a href="/"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>00</b> Home
+            </li></a
+          >
+          <a href="/destination-moon.html"
+            ><li class="border-b-4 border-white py-8">
+              <b>01</b> Destination
+            </li></a
+          >
+          <a href="/crew-commander.html"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>02</b> Crew
+            </li></a
+          >
+          <a href="/technology-vehicle.html"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>03</b> Technology
+            </li></a
+          >
+        </ul>
+      </div>
+      <div class="hamburger md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </div>
+      <aside
+        class="side-nav bg-[rgba(255, 0, 0, 0.5)] absolute top-0 right-0 bottom-0 left-auto h-screen w-[70vw] origin-right scale-x-0 backdrop-blur-2xl backdrop-filter transition-all duration-300 md:hidden"
+      >
+        <div class="close-btn m-5 flex justify-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+              <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+            </g>
+          </svg>
+        </div>
+        <ul class="mt-44 ml-10 cursor-pointer uppercase tracking-[2.7px]">
+          <a href="/"
+            ><li class="mb-10 border-r-4 border-transparent">
+              <b>00</b> Home
+            </li></a
+          >
+          <a href="/destination-moon.html"
+            ><li class="mb-10 border-r-4 border-white hover:border-gray-500">
+              <b>01</b> Destination
+            </li></a
+          >
+          <a href="/crew-commander.html"
+            ><li
+              class="mb-10 border-r-4 border-transparent hover:border-gray-500"
+            >
+              <b>02</b> Crew
+            </li></a
+          >
+          <a href="/technology-vehicle.html"
+            ><li class="border-r-4 border-transparent hover:border-gray-500">
+              <b>03</b> Technology
+            </li></a
+          >
+        </ul>
+      </aside>
+    </nav>
+    <main class="px-8 text-center md:text-left">
+      <div
+        class="font-barlow-condensed mb-10 uppercase tracking-[2.7px] md:mt-10 md:mb-20 md:text-[20px] md:tracking-[3.38px] lg:ml-32 lg:mb-10 lg:text-[28px] lg:tracking-[4.72px]"
+      >
+        <b class="opacity-25">01</b> Pick your destination
+      </div>
+      <!-- right section -->
+      <div
+        class="flex flex-col items-center justify-around text-center md:gap-32 lg:flex-row lg:gap-0 lg:text-left"
+      >
+        <div class="px-14 lg:px-8">
+          <img src="/assets/destination/image-mars.png" alt="mars " srcset="" />
+        </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
-</body>
+        <div class="lg:w-[35vw]">
+          <div class="tab-menu font-barlow-condensed uppercase">
+            <ul
+              class="text-space-purple mb-3 flex flex-row justify-center gap-5 text-[14px] tracking-[2.36px] md:gap-8 md:text-[16px] md:tracking-[2.7px] lg:justify-start"
+            >
+              <a
+                href="/destination-moon.html"
+                class="border-b-[3px] border-b-transparent py-3 hover:border-b-gray-500"
+              >
+                <li>Moon</li>
+              </a>
+              <a
+                href="/destination-mars.html"
+                class="border-b-[3px] border-b-white py-3 text-white"
+              >
+                <li>Mars</li>
+              </a>
+              <a
+                href="/destination-europa.html"
+                class="border-b-[3px] border-b-transparent py-3 hover:border-b-gray-500"
+              >
+                <li>Europa</li>
+              </a>
+              <a
+                href="/destination-titan.html"
+                class="border-b-[3px] border-b-transparent py-3 hover:border-b-gray-500"
+              >
+                <li>Titan</li>
+              </a>
+            </ul>
+          </div>
+          <h2
+            class="font-bellefair text-[56px] uppercase md:text-[80px] lg:text-[100px]"
+          >
+            Mars
+          </h2>
+          <article
+            class="text-space-purple md:-text[16px] text-[15px] leading-[25px] md:px-32 md:leading-[28px] lg:px-0 lg:text-left lg:text-[18px]"
+          >
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </article>
+          <div
+            class="md:p-t-10 mt-5 flex flex-col items-center justify-center gap-5 border-t-[1px] border-t-[rgba(255,255,255,0.2)] p-5 md:mt-14 md:flex-row md:gap-28"
+          >
+            <div>
+              <div
+                class="text-space-purple font-barlow-condensed text-[14px] tracking-[2.36px]"
+              >
+                Avg. distance
+              </div>
+              <div class="font-bellefair text-[28px] uppercase">
+                225 MIL. km
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-space-purple font-barlow-condensed text-[14px] tracking-[2.36px]"
+              >
+                Est. travel time
+              </div>
+              <div class="font-bellefair text-[28px] uppercase">9 months</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/scripts//index.js"></script>
 </html>

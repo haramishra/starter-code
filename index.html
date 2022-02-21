@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
       rel="stylesheet"
     />
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
 
@@ -33,16 +34,30 @@
         <ul
           class="flex cursor-pointer flex-row space-x-10 uppercase tracking-[2.7px] lg:w-full lg:pr-44 lg:pl-20"
         >
-          <li class="border-b-4 border-white py-8"><b>00</b> Home</li>
-          <li class="border-b-4 border-transparent py-8 hover:border-gray-500">
-            <b>01</b> Destination
-          </li>
-          <li class="border-b-4 border-transparent py-8 hover:border-gray-500">
-            <b>02</b> Crew
-          </li>
-          <li class="border-b-4 border-transparent py-8 hover:border-gray-500">
-            <b>03</b> Technology
-          </li>
+          <a href="/"
+            ><li class="border-b-4 border-white py-8"><b>00</b> Home</li></a
+          >
+          <a href="/destination-moon.html"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>01</b> Destination
+            </li></a
+          >
+          <a href="/crew-commander.html"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>02</b> Crew
+            </li></a
+          >
+          <a href="/technology-vehicle.html"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>03</b> Technology
+            </li></a
+          >
         </ul>
       </div>
       <div class="hamburger md:hidden">
@@ -63,30 +78,40 @@
             </g>
           </svg>
         </div>
-        <ul
-          class="mt-44 ml-10 cursor-pointer space-y-10 uppercase tracking-[2.7px]"
-        >
-          <li class="border-r-4 border-white"><b>00</b> Home</li>
-          <li class="border-r-4 border-transparent hover:border-gray-500">
-            <b>01</b> Destination
-          </li>
-          <li class="border-r-4 border-transparent hover:border-gray-500">
-            <b>02</b> Crew
-          </li>
-          <li class="border-r-4 border-transparent hover:border-gray-500">
-            <b>03</b> Technology
-          </li>
+        <ul class="mt-44 ml-10 cursor-pointer uppercase tracking-[2.7px]">
+          <a href="/"
+            ><li class="mb-10 border-r-4 border-white"><b>00</b> Home</li></a
+          >
+          <a href="/destination-moon.html"
+            ><li
+              class="mb-10 border-r-4 border-transparent hover:border-gray-500"
+            >
+              <b>01</b> Destination
+            </li></a
+          >
+          <a href="/crew-commander.html"
+            ><li
+              class="mb-10 border-r-4 border-transparent hover:border-gray-500"
+            >
+              <b>02</b> Crew
+            </li></a
+          >
+          <a href="/technology-vehicle.html"
+            ><li class="border-r-4 border-transparent hover:border-gray-500">
+              <b>03</b> Technology
+            </li></a
+          >
         </ul>
       </aside>
     </nav>
 
     <main
-      class="mt-[12%] flex flex-col justify-around gap-20 px-8 text-center align-bottom md:gap-32 lg:flex-row"
+      class="mt-[12%] flex flex-col justify-around gap-20 text-center align-bottom md:gap-32 lg:flex-row"
     >
       <div class="self-center sm:w-[92%] md:w-[70%] lg:w-[40%]">
         <header>
           <h1
-            class="font-barlow-condensed mb-5 w-full text-[28px] tracking-widest text-[#D0D6F9] md:text-3xl lg:text-justify"
+            class="font-barlow-condensed mb-5 w-full text-[28px] tracking-widest text-space-purple md:text-3xl lg:text-justify"
           >
             So, you want to travel to
             <div
@@ -97,7 +122,7 @@
           </h1>
         </header>
         <article
-          class="font-barlow w-full text-[18px] leading-6 text-[#D0D6F9] lg:text-justify"
+          class="font-barlow w-full text-[18px] leading-6 text-space-purple lg:text-justify"
         >
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit

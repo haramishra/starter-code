@@ -18,6 +18,9 @@ module.exports = {
           "url('/assets/destination/background-destination-desktop.jpg')",
         "destination-mobile":
           "url('/assets/destination/background-destination-mobile.jpg')",
+        "crew-desktop": "url('/assets/crew/background-crew-desktop.jpg')",
+        "crew-mobile": "url('/assets/crew/background-crew-mobile.jpg')",
+        "crew-tablet": "url('/assets/crew/background-crew-tablet.jpg')",
       },
     },
   },

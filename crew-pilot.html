@@ -1,28 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Pilot
-  Victor Glover
-
-  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-  International Space Station. Glover is a commander in the U.S. Navy where 
-  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer. 
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop font-space h-screen w-full bg-black bg-cover text-white"
+  >
+    <nav class="relative flex flex-row items-center justify-between p-8">
+      <a href="/" class="logo h-[40px] w-[40px] lg:h-[48px] lg:w-[48px]">
+        <img src="./assets//shared/logo.svg" alt="logo" srcset="" />
+      </a>
+      <div class="` relative hidden backdrop-blur-xl backdrop-filter md:block">
+        <div
+          class="line absolute top-[50%] right-[50rem] z-50 hidden h-[0.5px] bg-[#979797] opacity-50 backdrop-blur-xl backdrop-filter lg:block lg:w-[18vw] xl:w-[26vw]"
+        ></div>
+        <ul
+          class="flex cursor-pointer flex-row space-x-10 uppercase tracking-[2.7px] lg:w-full lg:pr-44 lg:pl-20"
+        >
+          <a href="/"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>00</b> Home
+            </li></a
+          >
+          <a
+            href="/destination-moon.html"
+            class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            ><li><b>01</b> Destination</li></a
+          >
+          <a href="/crew-commander.html"
+            ><li class="border-b-4 border-white py-8"><b>02</b> Crew</li></a
+          >
+          <a href="/technology-vehicle.html"
+            ><li
+              class="border-b-4 border-transparent py-8 hover:border-gray-500"
+            >
+              <b>03</b> Technology
+            </li></a
+          >
+        </ul>
+      </div>
+      <div class="hamburger md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </div>
+      <aside
+        class="side-nav bg-[rgba(255, 0, 0, 0.5)] absolute top-0 right-0 bottom-0 left-auto h-screen w-[70vw] origin-right scale-x-0 backdrop-blur-2xl backdrop-filter transition-all duration-300 md:hidden"
+      >
+        <div class="close-btn m-5 flex justify-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+              <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+            </g>
+          </svg>
+        </div>
+        <ul class="mt-44 ml-10 cursor-pointer uppercase tracking-[2.7px]">
+          <a href="/"
+            ><li class="mb-10 border-r-4 border-transparent">
+              <b>00</b> Home
+            </li></a
+          >
+          <a href="/destination-moon.html"
+            ><li class="mb-10 border-r-4 border-white hover:border-gray-500">
+              <b>01</b> Destination
+            </li></a
+          >
+          <a href="/crew-commander.html"
+            ><li
+              class="mb-10 border-r-4 border-transparent hover:border-gray-500"
+            >
+              <b>02</b> Crew
+            </li></a
+          >
+          <a href="/technology-vehicle.html"
+            ><li class="border-r-4 border-transparent hover:border-gray-500">
+              <b>03</b> Technology
+            </li></a
+          >
+        </ul>
+      </aside>
+    </nav>
+    <main class="px-8 text-center md:text-left lg:px-12">
+      <div
+        class="font-barlow-condensed mb-10 uppercase tracking-[2.7px] md:mt-10 md:mb-10 md:text-[20px] md:tracking-[3.38px] lg:ml-32 lg:mb-0 lg:hidden lg:text-[28px] lg:tracking-[4.72px]"
+      >
+        <b class="opacity-25">02</b> Meet your crew
+      </div>
+      <div
+        class="flex flex-col items-start justify-around text-center md:flex-col-reverse md:gap-10 md:px-28 lg:flex-row-reverse lg:gap-0 lg:px-0 lg:text-left"
+      >
+        <div
+          class="self-start border-b-[1px] border-gray-500 px-14 md:self-center md:border-0 md:px-14 lg:px-0"
+        >
+          <img
+            src="/assets/crew/image-victor-glover.png"
+            alt="commander hurlay douglas "
+            srcset=""
+          />
+        </div>
+        <div class="flex flex-col md:flex-col-reverse lg:mr-10">
+          <div
+            id="circle-navigation"
+            class="my-10 flex items-center justify-center gap-3"
+          >
+            <a href="/crew-commander.html">
+              <div class="h-3 w-3 rounded-full bg-gray-500"></div>
+            </a>
+            <a href="/crew-specialist.html">
+              <div class="h-3 w-3 rounded-full bg-gray-500"></div>
+            </a>
+            <a href="/crew-pilot.html">
+              <div class="h-3 w-3 rounded-full bg-white"></div>
+            </a>
+            <a href="/crew-engineer.html">
+              <div class="h-3 w-3 rounded-full bg-gray-500"></div>
+            </a>
+          </div>
+          <div class="space-y-3 lg:flex lg:w-[35vw] lg:flex-col lg:gap-36">
+            <div
+              class="font-barlow-condensed mb-10 hidden uppercase tracking-[2.7px] md:mt-0 md:mb-0 md:text-[20px] md:tracking-[3.38px] lg:ml-0 lg:mb-0 lg:block lg:self-start lg:text-[28px] lg:tracking-[4.72px]"
+            >
+              <b class="opacity-25">02</b> Meet your crew
+            </div>
+            <div>
+              <div
+                id="title"
+                class="font-bellefair uppercase opacity-40 md:text-[24px]"
+              >
+                PILOT
+              </div>
+              <div
+                id="name"
+                class="font-bellefair text-[24px] uppercase md:text-[40px]"
+              >
+                Victor Glover
+              </div>
+              <article
+                class="font-barlow text-space-purple text-[15px] md:text-[16px] md:leading-[28px] lg:mt-8 lg:text-[18px] lg:leading-[32px]"
+              >
+                Pilot on the first operational flight of the SpaceX Crew Dragon
+                to the International Space Station. Glover is a commander in the
+                U.S. Navy where he pilots an F/A-18.He was a crew member of
+                Expedition 64, and served as a station systems flight engineer.
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/scripts/index.js" />
 </html>
